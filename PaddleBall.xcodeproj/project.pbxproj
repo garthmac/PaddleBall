@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88377D261B1414B7007122A6 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 885962AC1B13975D00A32899 /* Settings.bundle */; };
+		88377D2A1B14DB01007122A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88377D291B14DB01007122A6 /* User.swift */; };
 		885962851B13818200A32899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885962841B13818200A32899 /* AppDelegate.swift */; };
-		885962871B13818200A32899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885962861B13818200A32899 /* ViewController.swift */; };
-		8859628A1B13818200A32899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885962881B13818200A32899 /* Main.storyboard */; };
 		8859628C1B13818200A32899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8859628B1B13818200A32899 /* Images.xcassets */; };
 		8859628F1B13818200A32899 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8859628D1B13818200A32899 /* LaunchScreen.xib */; };
 		8859629B1B13818200A32899 /* PaddleBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859629A1B13818200A32899 /* PaddleBallTests.swift */; };
+		885962A51B1381B200A32899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885962A41B1381B200A32899 /* Main.storyboard */; };
+		885962A71B1381CF00A32899 /* BreakoutBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885962A61B1381CF00A32899 /* BreakoutBehavior.swift */; };
+		885962A91B1381D900A32899 /* BallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885962A81B1381D900A32899 /* BallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88377D291B14DB01007122A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8859627F1B13818200A32899 /* PaddleBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaddleBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885962831B13818200A32899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		885962841B13818200A32899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		885962861B13818200A32899 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		885962891B13818200A32899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8859628B1B13818200A32899 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8859628E1B13818200A32899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		885962941B13818200A32899 /* PaddleBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaddleBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		885962991B13818200A32899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8859629A1B13818200A32899 /* PaddleBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddleBallTests.swift; sourceTree = "<group>"; };
+		885962A41B1381B200A32899 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		885962A61B1381CF00A32899 /* BreakoutBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreakoutBehavior.swift; sourceTree = "<group>"; };
+		885962A81B1381D900A32899 /* BallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallViewController.swift; sourceTree = "<group>"; };
+		885962AC1B13975D00A32899 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +83,12 @@
 		885962811B13818200A32899 /* PaddleBall */ = {
 			isa = PBXGroup;
 			children = (
-				885962841B13818200A32899 /* AppDelegate.swift */,
-				885962861B13818200A32899 /* ViewController.swift */,
-				885962881B13818200A32899 /* Main.storyboard */,
+				885962A41B1381B200A32899 /* Main.storyboard */,
+				885962A81B1381D900A32899 /* BallViewController.swift */,
+				885962A61B1381CF00A32899 /* BreakoutBehavior.swift */,
 				8859628B1B13818200A32899 /* Images.xcassets */,
-				8859628D1B13818200A32899 /* LaunchScreen.xib */,
+				88377D291B14DB01007122A6 /* User.swift */,
+				885962AC1B13975D00A32899 /* Settings.bundle */,
 				885962821B13818200A32899 /* Supporting Files */,
 			);
 			path = PaddleBall;
@@ -90,6 +97,8 @@
 		885962821B13818200A32899 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				885962841B13818200A32899 /* AppDelegate.swift */,
+				8859628D1B13818200A32899 /* LaunchScreen.xib */,
 				885962831B13818200A32899 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +170,7 @@
 				TargetAttributes = {
 					8859627E1B13818200A32899 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 7P9362E76E;
 					};
 					885962931B13818200A32899 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -192,9 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8859628A1B13818200A32899 /* Main.storyboard in Resources */,
+				88377D261B1414B7007122A6 /* Settings.bundle in Resources */,
 				8859628F1B13818200A32899 /* LaunchScreen.xib in Resources */,
 				8859628C1B13818200A32899 /* Images.xcassets in Resources */,
+				885962A51B1381B200A32899 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885962871B13818200A32899 /* ViewController.swift in Sources */,
+				88377D2A1B14DB01007122A6 /* User.swift in Sources */,
+				885962A71B1381CF00A32899 /* BreakoutBehavior.swift in Sources */,
+				885962A91B1381D900A32899 /* BallViewController.swift in Sources */,
 				885962851B13818200A32899 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,14 +249,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		885962881B13818200A32899 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				885962891B13818200A32899 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8859628D1B13818200A32899 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaddleBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PaddleBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +418,7 @@
 				885962A01B13818200A32899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		885962A11B13818200A32899 /* Build configuration list for PBXNativeTarget "PaddleBallTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +427,7 @@
 				885962A31B13818200A32899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
